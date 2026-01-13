@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - Kyle Naumann</title>
+    <meta name="description" content="Beautiful temples from around the world showcasing sacred architecture and divine craftsmanship.">
+    <meta name="author" content="Kyle Naumann">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Open+Sans:wght@300;400;600;700&display=swap">
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1><a href="#" id="header-home">Temple Album</a></h1>
+        <button id="hamburger-btn">&#9776;</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Sacred Temples</h1>
+        <div id="temple-gallery">
+            <figure class="temple-card" data-category="old large">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-15669-main.jpg" alt="Salt Lake Temple" loading="lazy">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="old large">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/manti-utah-temple/manti-utah-temple-58955-main.jpg" alt="Manti Utah Temple" loading="lazy">
+                <figcaption>Manti Utah Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="old large">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/logan-utah-temple/logan-utah-temple-58948-main.jpg" alt="Logan Utah Temple" loading="lazy">
+                <figcaption>Logan Utah Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="new large">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/rome-italy-temple/rome-italy-temple-2642-main.jpg" alt="Rome Italy Temple" loading="lazy">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="new small">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/cedar-city-utah-temple/cedar-city-utah-temple-24305-main.jpg" alt="Cedar City Utah Temple" loading="lazy">
+                <figcaption>Cedar City Utah Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="new small">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/pocatello-idaho-temple/pocatello-idaho-temple-22662-main.jpg" alt="Pocatello Idaho Temple" loading="lazy">
+                <figcaption>Pocatello Idaho Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="old small">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/st-george-utah-temple/st-george-utah-temple-40944-main.jpg" alt="St. George Utah Temple" loading="lazy">
+                <figcaption>St. George Utah Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="new large">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/payson-utah-temple/payson-utah-temple-7979-main.jpg" alt="Payson Utah Temple" loading="lazy">
+                <figcaption>Payson Utah Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="new small">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/brigham-city-utah-temple/brigham-city-utah-temple-36915-main.jpg" alt="Brigham City Utah Temple" loading="lazy">
+                <figcaption>Brigham City Utah Temple</figcaption>
+            </figure>
+
+            <figure class="temple-card" data-category="old large">
+                <img src="https://churchofjesuschristtemples.org/assets/img/temples/provo-city-center-temple/provo-city-center-temple-14031-main.jpg" alt="Provo City Center Temple" loading="lazy">
+                <figcaption>Provo City Center Temple</figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Kyle Naumann, California</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
