@@ -7,19 +7,21 @@
         align-items: center;
     }
 
-    header h1 {
+    .site-title {
         font-size: 2.5rem;
         margin-bottom: 0;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
     }
 
-    header h1 a {
+    .site-title a {
         color: var(--white);
         text-decoration: none;
         cursor: pointer;
         transition: opacity 0.3s ease;
     }
 
-    header h1 a:hover {
+    .site-title a:hover {
         opacity: 0.8;
     }
 

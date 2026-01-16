@@ -45,11 +45,18 @@ header {
     overflow: visible;
 }
 
-header h1 {
+.site-title {
     color: var(--white);
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.site-title a {
+    color: var(--white);
+    text-decoration: none;
 }
 
 #hamburger-btn {
@@ -105,7 +112,8 @@ nav {
 
 #nav-menu a:hover,
 #nav-menu a.active {
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
+    color: var(--white);
 }
 
 #nav-menu li:last-child a {
@@ -148,6 +156,7 @@ main h1 {
     height: 250px;
     object-fit: cover;
     display: block;
+    transition: opacity 0.3s ease;
 }
 
 .temple-card figcaption {
@@ -178,16 +187,4 @@ footer p:last-child {
 
 .hidden {
     display: none !important;
-}
-
-.temple-card img {
-    transition: opacity 0.3s ease;
-}
-
-.temple-card img[loading="lazy"] {
-    opacity: 0.8;
-}
-
-.temple-card img:loaded {
-    opacity: 1;
 }
