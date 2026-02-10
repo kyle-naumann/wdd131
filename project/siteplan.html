@@ -179,6 +179,77 @@
                 </div>
             </div>
         </section>
+
+        <section class="review-form">
+            <h2>Site Plan Review Form</h2>
+            <p>Please provide feedback on this site plan:</p>
+
+            <form method="get" action="review.html">
+                <div class="form-group">
+                    <label for="reviewer-name">Your Name:</label>
+                    <select id="reviewer-name" name="reviewer-name" required>
+                        <option value="" disabled selected>Please select your role</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="peer">Peer Reviewer</option>
+                        <option value="client">Potential Client</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <fieldset>
+                    <legend>Overall Rating:</legend>
+                    <input type="radio" id="excellent" name="rating" value="excellent" required>
+                    <label for="excellent">Excellent</label>
+
+                    <input type="radio" id="good" name="rating" value="good" required>
+                    <label for="good">Good</label>
+
+                    <input type="radio" id="average" name="rating" value="average" required>
+                    <label for="average">Average</label>
+
+                    <input type="radio" id="poor" name="rating" value="poor" required>
+                    <label for="poor">Needs Improvement</label>
+
+                    <input type="radio" id="fail" name="rating" value="fail" required>
+                    <label for="fail">Unsatisfactory</label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="review-date">Review Date:</label>
+                    <input type="date" id="review-date" name="review-date" required>
+                </div>
+
+                <fieldset>
+                    <legend>Which sections are well-developed?</legend>
+                    <input type="checkbox" id="site-name-check" name="sections" value="site-name">
+                    <label for="site-name-check">Site Name</label>
+
+                    <input type="checkbox" id="site-purpose-check" name="sections" value="site-purpose">
+                    <label for="site-purpose-check">Site Purpose</label>
+
+                    <input type="checkbox" id="scenarios-check" name="sections" value="scenarios">
+                    <label for="scenarios-check">Scenarios</label>
+
+                    <input type="checkbox" id="color-schema-check" name="sections" value="color-schema">
+                    <label for="color-schema-check">Color Schema</label>
+
+                    <input type="checkbox" id="typography-check" name="sections" value="typography">
+                    <label for="typography-check">Typography</label>
+
+                    <input type="checkbox" id="wireframes-check" name="sections" value="wireframes">
+                    <label for="wireframes-check">Wireframes</label>
+                </fieldset>
+
+                <div class="form-group">
+                    <label for="comments">Additional Comments:</label>
+                    <textarea id="comments" name="comments" rows="5" cols="50" placeholder="Please provide specific feedback on the site plan..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit Review">
+                </div>
+            </form>
+        </section>
     </main>
 
     <footer>
