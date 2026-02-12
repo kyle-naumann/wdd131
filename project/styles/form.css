@@ -316,39 +316,39 @@ footer p {
     body {
         padding: 10px;
     }
-    
+
     header, footer {
         margin-left: -10px;
         margin-right: -10px;
         padding: 1.5rem;
     }
-    
+
     header h1 {
         font-size: 2rem;
     }
-    
+
     main {
         padding: 1.5rem;
     }
-    
+
     fieldset {
         padding: 1rem;
     }
-    
+
     .rating-container {
         flex-direction: column;
         align-items: stretch;
     }
-    
+
     .star-label {
         justify-content: center;
         font-size: 1.2rem;
     }
-    
+
     .checkbox-container {
         grid-template-columns: 1fr;
     }
-    
+
     input[type="submit"] {
         width: 100%;
         padding: 1.2rem;
