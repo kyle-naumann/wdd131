@@ -596,13 +596,13 @@ input[type="submit"]:active {
     .review-form {
         padding: 1rem;
     }
-    
+
     input[type="radio"] + label,
     input[type="checkbox"] + label {
         display: block;
         margin: 0.5rem 0;
     }
-    
+
     input[type="radio"],
     input[type="checkbox"] {
         margin-right: 0.5rem;
