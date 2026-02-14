@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.2s ease;
 }
 
 /* Color Variables - Using kyleis.fun brand colors */
@@ -375,9 +376,4 @@ input:invalid {
 
 input:valid {
     border-color: var(--success-color);
-}
-
-/* Smooth transitions for all interactive elements */
-* {
-    transition: all 0.2s ease;
 }
