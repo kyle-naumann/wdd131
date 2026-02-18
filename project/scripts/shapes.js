@@ -1,0 +1,16 @@
+const designElements = [
+  { class: "design-circle design-circle-1" },
+  { class: "design-circle design-circle-2" },
+  { class: "design-circle design-circle-3" },
+  { class: "design-circle design-circle-4" },
+  { class: "design-circle design-circle-5" },
+  { class: "design-circle design-circle-6" },
+  { class: "design-rectangle design-rect-1" },
+  { class: "design-rectangle design-rect-2" },
+  { class: "design-rectangle design-rect-3" },
+  { class: "design-rectangle design-rect-4" },
+  { class: "design-triangle" },
+  { class: "design-triangle design-triangle-2" },
+  { class: "design-gradient-blob" },
+  { class: "design-circle design-circle-small" },
+];
