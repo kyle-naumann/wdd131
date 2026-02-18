@@ -1076,18 +1076,23 @@ body {
     .skills-orbit-container {
         display: none !important;
     }
-    
+
     .skills-cards-container {
         display: block !important;
     }
-    
+
     .skills-grid {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 20px;
     }
-    
+
     .skill-card {
         padding: 20px;
+    }
+
+    .contact-text p {
+        font-size: 1.5rem;
+        line-height: 1.6;
     }
 }
 

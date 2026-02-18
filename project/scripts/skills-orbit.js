@@ -120,7 +120,7 @@ function createSkillsCards() {
 }
 
 // Initialize when DOM is loaded
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   createSkillsOrbit();
   createSkillsCards();
 });
