@@ -95,5 +95,32 @@ function createSkillsOrbit() {
   });
 }
 
+function createSkillsCards() {
+  const skillsGrid = document.getElementById("skillsGrid");
+  if (!skillsGrid) return;
+
+  skills.forEach((skill) => {
+    const cardElement = document.createElement("div");
+    cardElement.className = "skill-card";
+    cardElement.style.setProperty("--skill-color", skill.color);
+
+    cardElement.innerHTML = `
+      <div class="skill-card-header">
+        <div class="skill-card-icon" style="background: ${skill.color}">
+          ${skill.name.charAt(0)}
+        </div>
+        <h3 class="skill-card-title">${skill.name}</h3>
+      </div>
+      <p class="skill-card-description">${skill.description}</p>
+      <span class="skill-card-experience">${skill.experience}</span>
+    `;
+
+    skillsGrid.appendChild(cardElement);
+  });
+}
+
 // Initialize when DOM is loaded
-document.addEventListener("DOMContentLoaded", createSkillsOrbit);
+document.addEventListener("DOMContentLoaded", function() {
+  createSkillsOrbit();
+  createSkillsCards();
+});
